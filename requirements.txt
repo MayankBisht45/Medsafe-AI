@@ -1,0 +1,6 @@
+streamlit
+rapidfuzz
+pytesseract
+pillow
+ollama
+pandas
