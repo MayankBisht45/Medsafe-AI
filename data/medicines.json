@@ -1,0 +1,73 @@
+{
+  "medicines": [
+    {
+      "id": "MED001",
+      "name": "Paracetamol",
+      "category": "Analgesic",
+      "active_ingredient": "Acetaminophen",
+      "aliases": ["Acetaminophen", "Tylenol", "Panadol", "Paracetemol"]
+    },
+    {
+      "id": "MED002",
+      "name": "Aspirin",
+      "category": "NSAID / Antiplatelet",
+      "active_ingredient": "Acetylsalicylic acid",
+      "aliases": ["Disprin", "Ecosprin"]
+    },
+    {
+      "id": "MED003",
+      "name": "Ibuprofen",
+      "category": "NSAID",
+      "active_ingredient": "Ibuprofen",
+      "aliases": ["Advill", "Motrin", "Brufen"]
+    },
+    {
+      "id": "MED004",
+      "name": "Warfarin",
+      "category": "Anticoagulant",
+      "active_ingredient": "Warfarin Sodium",
+      "aliases": ["Coumadin", "Jantoven"]
+    },
+    {
+      "id": "MED005",
+      "name": "Amoxicillin",
+      "category": "Antibiotic",
+      "active_ingredient": "Amoxicillin",
+      "aliases": ["Mox", "Novamox"]
+    },
+    {
+      "id": "MED006",
+      "name": "Lisinopril",
+      "category": "ACE Inhibitor",
+      "active_ingredient": "Lisinopril",
+      "aliases": ["Prinivil", "Zestril"]
+    },
+    {
+      "id": "MED007",
+      "name": "Spironolactone",
+      "category": "Diuretic",
+      "active_ingredient": "Spironolactone",
+      "aliases": ["Aldactone"]
+    }
+  ],
+  "interactions": [
+    {
+      "pair": ["Aspirin", "Warfarin"],
+      "severity": "High",
+      "risk_score": 9,
+      "description": "Combining Aspirin with Warfarin significantly increases the risk of severe internal bleeding and hemorrhage."
+    },
+    {
+      "pair": ["Aspirin", "Ibuprofen"],
+      "severity": "Moderate",
+      "risk_score": 6,
+      "description": "Ibuprofen may reduce the cardio-protective effect of low-dose Aspirin and increase gastrointestinal bleeding risk."
+    },
+    {
+      "pair": ["Lisinopril", "Spironolactone"],
+      "severity": "High",
+      "risk_score": 8,
+      "description": "Combining an ACE inhibitor with Spironolactone can cause Hyperkalemia (critically high blood potassium levels)."
+    }
+  ]
+}
